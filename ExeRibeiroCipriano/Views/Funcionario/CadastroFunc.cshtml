@@ -1,0 +1,52 @@
+﻿
+@model ExeRibeiroCipriano.Models.Funcionario
+@{
+    ViewBag.Title = "CadastroFunc";
+}
+
+<style>
+
+    form > div {
+        margin-left: 0;
+        padding: 0.5rem;
+    }
+
+    .error {
+        display: inline-flex;
+        width: 100%;
+        background: red;
+        color: #fff;
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+</style>
+
+<h2>Cadastre um Funcionário</h2>
+
+
+<form action="SelectFunc" method="post" class="form">
+
+    <span id="error"></span>
+
+    <div>
+        <label>Código</label>
+        <input type="number" min="0" value="@Model.codigo" name="codigo"/>
+    </div>
+
+    <div>
+        <label>Nome</label>
+        <input type="text" value="@Model.nome" name="nome"/>
+    </div>
+
+    <div>
+        <label>Função</label>
+        <input type="text" value="@Model.funcao" name="funcao"/>
+    </div>
+
+    <button type="submit">Cadastrar</button>
+
+</form>
+
+
+<script src="~/Scripts/formsValidation.js"></script>
+

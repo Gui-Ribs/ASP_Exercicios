@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "Nota";
+}
+
+<style>
+
+    .saas, button {
+        display: flex;
+        flex-direction: row;
+        gap: .6rem;
+        margin-top: 2rem;
+    }
+</style>
+
+
+<form action="CalculaNota" method="get">
+
+    <h2>Calculando a minha nota</h2>
+
+    <div class="saas">
+
+        <h3>Digite a quantidade de erros:</h3>
+        <input type="number" name="result" value="result">
+
+    </div>
+
+    <button type="submit">Calcular</button>
+
+</form>
