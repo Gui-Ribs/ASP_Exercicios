@@ -44,10 +44,10 @@ namespace ExeRibeiroCipriano.Controllers
                     ViewBag.result = final;
                 }
                 else
-                    return View("Nota");
+                    return RedirectToAction("Nota");
             }
             else
-                return View("Nota");
+                return RedirectToAction("Nota");
 
             return View();
         
